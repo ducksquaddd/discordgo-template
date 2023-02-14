@@ -15,10 +15,7 @@ func New() *CmdHandler {
 
 // ! The guide every command must follow
 type Command struct {
-	// ! The name this command goes by
 	Name string
-
-	// ! Command Data
 	Exec func(s *discordgo.Session, m *discordgo.Message, args *[]string)
 }
 
